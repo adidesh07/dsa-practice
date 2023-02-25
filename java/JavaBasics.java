@@ -18,8 +18,9 @@ public class JavaBasics {
     private final int[] test = new int[5]; // "final" keyword -> variable value cannot be changed
 
     // ArrayList can only have non-primitive data types or wrapper classes of primitive data types
-    ArrayList<Integer> marks = new ArrayList<Integer>();
-    public void setMarks(ArrayList<Integer> marks) {
+    ArrayList<Integer> marks = new ArrayList<>();
+    public void setMarks() {
+        // ArrayList.add() can be called only from within a method
         this.marks.add(100);
         this.marks.add(50);
     }
